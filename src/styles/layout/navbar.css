@@ -1,0 +1,57 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 25px 0;
+  z-index: 1000;
+  transition: all 0.4s ease;
+  background: transparent;
+}
+
+/* Saat di-scroll (ditambahkan via JS) */
+#navbar.scrolled {
+  padding: 15px 0;
+  background: rgba(10, 25, 47, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1400px; /* Batas maksimal biar gak terlalu minggir di monitor gede */
+  margin: 0 auto;
+  height: 30px;
+  display: flex;
+  justify-content: space-between; /* Sekarang ini harusnya narik ke ujung */
+  align-items: center;
+  padding: 0 70px; /* Kasih napas sedikit di pinggir */
+  box-sizing: border-box; /* Biar padding gak nambah lebar total */
+}
+
+.nav-logo img {
+  height: 60px;
+  transition: 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-left: auto;
+  padding: 0px;
+  flex-shrink: 0; /* Biar menunya gak gepeng */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white-soft);
+  font-size: 0.9rem;
+  font-weight: 500;
+  opacity: 0.7;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 1;
+  color: var(--accent-blue);
+}
