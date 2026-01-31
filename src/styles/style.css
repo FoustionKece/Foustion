@@ -1,0 +1,12 @@
+@import "./base/variables.css";
+@import "./animations/opening.css";
+@import "./layout/navbar.css"; /* Tambahkan ini */
+@import "./pages/home.css"; /* Tambahkan ini */
+@import "./animations/scroll-reveal.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--navy-main);
+  overflow: hidden;
+}

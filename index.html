@@ -1,52 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FSTN | Fourteen Smart Generation</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      href="../foustion-web/src/assets/images/logo/FSTN.svg"
+      type="image/svg+xml"
+    />
+    <title>FSTN | Fourteen Smart Generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="opening-overlay" class="opening-overlay">
+      <div class="logo-animation-container">
+        <div class="logo-box-wrapper">
+          <div class="logo-fragment fragment-1">
+            <img src="/src/assets/images/logo/FSTN.svg" alt="FSTN" />
+          </div>
+          <div class="logo-fragment fragment-2">
+            <img src="/src/assets/images/logo/FSTN.svg" alt="FSTN" />
+          </div>
+          <div class="logo-fragment fragment-3">
+            <img src="/src/assets/images/logo/FSTN.svg" alt="FSTN" />
+          </div>
+          <div class="logo-fragment fragment-4">
+            <img src="/src/assets/images/logo/FSTN.svg" alt="FSTN" />
+          </div>
+        </div>
+        <h1 class="brand-text">FOUSTION</h1>
+      </div>
 
-  <!-- MAIN CSS -->
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-
-  <!-- ================= OPENING LOADER ================= -->
-  <div id="opening-loader">
-
-    <div class="logo-wrapper">
-      <!-- SVG LOGO -->
-      <object 
-        id="fstn-logo"
-        type="image/svg+xml"
-        data="assets/images/logo/FSTN.svg">
-      </object>
+      <div class="loader-container">
+        <div class="loader-bar"></div>
+      </div>
     </div>
 
-    <!-- TEXT FOUSTION -->
-    <div class="logo-text">
-      <svg viewBox="0 0 600 120">
-        <text
-          x="50%"
-          y="50%"
-          dominant-baseline="middle"
-          text-anchor="middle"
-          class="foustion-text">
-          FOUSTION
-        </text>
-      </svg>
-    </div>
-
-  </div>
-  <!-- =============== END OPENING LOADER =============== -->
-
-
-  <!-- ================= MAIN CONTENT ================= -->
-  <main id="main-content" class="hidden">
-    <!-- nanti isi navbar + section -->
-  </main>
-  <!-- =============== END MAIN CONTENT =============== -->
-
-
-  <script src="js/main.js"></script>
-</body>
+    <script type="module" src="/src/scripts/main.js"></script>
+  </body>
 </html>
